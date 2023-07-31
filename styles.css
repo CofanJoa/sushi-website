@@ -1,0 +1,234 @@
+*{   
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(25,25,25);
+    color: rgb(245,245,245);
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Unica One', cursive;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h2{
+    font-size: 2em;
+}
+
+h3, p {
+    font-size: 1.5em;
+}
+
+/****************************** HEADER **********************/
+header {
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.calamar-logo{  
+    height: 100px;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+}
+
+header a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a{
+    font-size: 1.5em;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: #bc66c7;
+    transition: 0.3s ease;
+}
+
+#invite-experience{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url('/img/sushi-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: auto;
+    font-size: 20px;
+}
+
+#invite-experience p {
+    margin-top: 2em;
+}
+
+#somos-ika .container{
+    text-align: center;
+    padding-top: 150px;
+}
+
+#somos-ika p {
+    padding: 2em;
+}
+
+#nuestro-menu .container{
+    text-align: center;
+    padding: 150px 12px;
+}
+
+#nuestro-menu h2{
+    text-align: center;
+}
+
+#nuestro-menu h1 {
+    margin-bottom: 1em;
+}
+
+#nuestro-menu .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 3px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url('/img/california.png');
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url('/img/new-york.png');
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url('/img/tres-piezas.png');
+}
+
+#reservas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url('/img/kanikama.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: auto;
+}
+
+#reservas button{
+    transition: box-shadow 0.3s ease;
+    font-weight: bold;
+    padding: 15px 50px;
+    border-radius: 10px;
+    border: 1px solid #B23C32;
+    background-color: #B23C32;
+    color: rgb(245, 245, 245);
+    cursor: pointer;
+    margin-top: 4em;
+}
+
+#reservas button:hover{
+    background-color: #a1372e;
+}
+
+footer p{
+    margin: 5px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    font-family: serif;
+    font-size: 10px;
+}
+
+#go-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #B23C32;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+#go-to-top-btn:hover {
+    background-color: #a1372e;
+    transition: 0.3s ease;
+}
+
+
+
+
+/* ************************ MEDIA QUERY**************/
+
+@media (max-width:800px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+
+    .logo h2 {
+        display: none;
+    }
+}
