@@ -94,6 +94,10 @@ nav a:hover{
     text-align: center;
 }
 
+#somos-ika h1 {
+    margin-top: 1em;
+}
+
 #somos-ika p {
     padding: 2em;
 }
