@@ -224,6 +224,10 @@ footer{
         font-size: .7em;
     }
 
+    header a {
+        font-size: 1.4em;
+    }
+
     .calamar-logo {
         display: none;
     }
